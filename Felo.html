@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>phelo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="text"></div>
+
+  <script>
+    const el = document.getElementById('text');
+    el.style.fontSize = "100px";
+    el.textContent = "";
+  </script>
+
+
+<details>
+    <summary>write your name</summary>
+
+    <br>
+
+    <input type="text" id="messageInput" placeholder="Write your name hear">
+    <button onclick="sendSMS()">Send</button>
+
+</details>
+
+<script>
+function sendSMS() {
+    var message = encodeURIComponent(
+        document.getElementById("messageInput").value
+    );
+
+    var phoneNumber = "01279035234";
+
+    window.location.href = "sms:" + phoneNumber + "?body=" + message;
+}
+</script>
+<img src="Red Ferrari sports c.png" alt="">
+<div class="box">
+  <h1>عنوااااااااان</h1>
+  <h1>كبيييييييير</h1>
+  <div> 
+  </body>
+</html>
+
+
+</body>
+</html>
+<style>
+.btn {
+    display: block;      /* important */
+    margin: 0 auto;      /* center horizontally */
+}
+</style>
+
+ <a href="tel:01279035234">
+  <button class="btn">Call Us</button>
+</a>
